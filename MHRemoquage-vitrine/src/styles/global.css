@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #F7F7F7;
+  --color-red-primary: #E63946;
+}
+
+
+@layer base {
+  html, body {
+    @apply w-full h-full bg-primary;
+  }
+}
