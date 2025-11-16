@@ -1,27 +1,32 @@
-
 <header class="w-full fixed top-0 z-50 bg-primary shadow-[0_1px_3px_rgba(0,0,0,0.08),0_3px_6px_rgba(0,0,0,0.06)]">
 
   <div class="w-full bg-primary">
-    <div class="max-w-6xl mx-auto h-20 flex items-center justify-between px-4 gap-4">
-      <div class="flex items-center gap-3">
-        <img src="/logo-provisoire.png" alt="Logo Full Dépannage" class="h-14 md:h-16 object-contain drop-shadow-lg" />
+    <div class="max-w-6xl mx-auto h-16 md:h-20 flex items-center justify-between px-4 gap-4">
+      
+      <div class="flex items-center gap-2 md:gap-3">
+        <img src="/logo-provisoire.png" 
+             alt="Logo Full Dépannage" 
+             class="h-10 md:h-16 object-contain drop-shadow-lg" />
 
-        <div class="flex flex-col">
-          <span class="text-black text-[0.2rem] md:text-lg font-semibold leading-tight">
+        <div class="flex flex-col leading-tight">
+          <span class="text-black text-[10px] md:text-md font-semibold">
             Full Dépannage
           </span>
-          <span class="text-xs md:text-sm text-gray-700">
+          <span class="text-[9px] md:text-sm text-gray-700">
             Intervention rapide · Multi-services
           </span>
         </div>
       </div>
 
-      <div class="flex flex-col items-end gap-2">
-        <div class="inline-flex items-center gap-2 rounded-full border border-red-primary/80 bg-red-primary/10 px-3 py-1 text-[10px] md:text-xs backdrop-blur">
-          <span class="w-2 h-2 rounded-full bg-red-primary animate-pulse"></span>
-          <span class="text-red-primary font-medium">Dépannage 24/7 partout en France</span>
+      <div class="flex flex-col items-end gap-1 md:gap-2">
+        <div class="inline-flex items-center gap-1.5 md:gap-2 rounded-full border border-red-primary/80 bg-red-primary/10 px-2.5 py-0.5 md:px-3 md:py-1 text-[8px] md:text-xs backdrop-blur">
+          <span class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-red-primary animate-pulse"></span>
+          <span class="text-red-primary text-[10px] md:text-md font-medium">
+            Dépannage 24/7 partout en France
+          </span>
         </div>
       </div>
+
     </div>
   </div>
 </header>
@@ -44,14 +49,14 @@ header {
 
 header .max-w-6xl,
 header img {
-  transition: height 0.45s cubic-bezier(0.22, 1, 0.36, 1); /* ease-out très smooth */
+  transition: height 0.45s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 header.shrink .max-w-6xl {
-  height: 60px !important;
+  height: 50px !important;
 }
 
 header.shrink img {
-  height: 40px !important;
+  height: 32px !important;
 }
 </style>
