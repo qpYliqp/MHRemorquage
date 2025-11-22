@@ -1,13 +1,21 @@
 ---
 import Header from '../components/Header.astro'
 import Presentation from '../components/Presentation.astro'
-import Service from '../components/Service.astro'
+import Remorquage from '../components/Remorquage.astro';
+import Serrurerie from '../components/Serrurerie.astro'
+import Convoyage from '../components/Convoyage.astro'
+import Contact from'../components/Contact.astro'
 import Layout from '../layouts/Layout.astro';
 import "../styles/global.css";
+import Services from '../components/Services.astro';
 ---
 
 <Layout>
 	<Header />
 	<Presentation />
-	<Service />
+	<Services />
+	<Remorquage></Remorquage>
+	<Serrurerie />
+	<Contact></Contact>
+	
 </Layout>

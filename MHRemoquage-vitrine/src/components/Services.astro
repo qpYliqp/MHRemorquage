@@ -1,0 +1,69 @@
+---
+import ServiceCard from './ServiceCard.astro';
+---
+
+<section class="relative w-full overflow-hidde">
+  <div class="container mx-auto px-4 py-20 md:py-32">
+    
+    <div class="mb-16 md:mb-20">
+      <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+        Nos <span class="text-red-primary">Services</span>
+      </h2>
+      <p class="text-lg md:text-xlmax-w-2xl mx-auto">
+        Des solutions professionnelles adaptées à tous vos besoins automobiles
+      </p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-7xl mx-auto">
+
+      <ServiceCard
+        title='<span class="text-slate-800 dark:text-white">Dépannage &</span><br /><span class="text-red-primary">Remorquage</span>'
+        description="Service d'urgence disponible à tout moment pour votre tranquillité d'esprit."
+        icon="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"
+        image="/remorquage-illustration.png"
+        features={[
+          "Intervention rapide sur place en cas de panne, crevaison, batterie à plat.",
+          "Remorquage vers le garage le plus proche ou le lieu de votre choix. Nous avons des collaborateurs sur bordeaux et ces alentours.",
+          "Enlèvement d'épave",
+        ]}
+      />
+      
+      <ServiceCard
+        title='<span class="text-red-primary">Serrurerie</span><br /><span class="text-slate-800 dark:text-white">Automobile</span>'
+        description="Expert en solutions d'accès véhicule avec intervention rapide et professionnelle."
+        icon="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"
+        image="/serrurerie-illustration.png"
+        features={[
+          "Ouverture de portes sans dégâts (clés perdues, verrouillées à l'intérieur, clé cassée).",
+          "Codage de clés."
+        ]}
+      />
+
+      <ServiceCard
+        title='<span class="text-red-primary">Convoyage</span><br /><span class="text-slate-800 dark:text-white">de Véhicules</span>'
+        description="Transport de véhicules particuliers, utilitaires ou de luxe."
+        icon="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"
+        image="/convoyage-illustration.png"
+        features={[
+          "Convoyage professionnel pour garages, concessions et particuliers.",
+          "Service national et international, assuré et sécurisé."
+        ]}
+      />
+
+      <ServiceCard
+        title='<span class="text-red-primary">Diagnostic</span><br /><span class="text-slate-800 dark:text-white">Électronique</span>'
+        description="Diagnostic avec des équipements modernes."
+        icon="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
+        image="/diagnostic-illustration.png"
+        features={[
+          "Diagnostic complet via valise multimarque.",
+          "Effacement de défauts électronniques, analyse moteur, freins, ANS, ESP, etc.",
+          "Préparation avant contrôle technique ou réparation.",
+        ]}
+      />
+      
+    </div>
+
+   
+  </div>
+</section>
