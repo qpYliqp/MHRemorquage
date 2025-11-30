@@ -1,20 +1,24 @@
 ---
-import Header from '../components/Header.astro'
-import Presentation from '../components/Presentation.astro'
-import PourquoiNous from '../components/PourquoiNous.astro';
-import ZoneIntervention from '../components/ZoneIntervention.astro'
-import Contact from'../components/Contact.astro'
-import Layout from '../layouts/Layout.astro';
+import Header from "../components/Header.astro";
+import Presentation from "../components/Presentation.astro";
+import PourquoiNous from "../components/PourquoiNous.astro";
+import ZoneIntervention from "../components/ZoneIntervention.astro";
+import Contact from "../components/Contact.astro";
+import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
-import Services from '../components/Services.astro';
+import Services from "../components/Services.astro";
+import LocalBusinessSchema from "../components/SEO/LocalBusinessSchema.astro";
 ---
 
-<Layout>
-	<Header />
-	<Presentation />
-	<Services />
-	<PourquoiNous />
-	<ZoneIntervention />
-	<Contact></Contact>
-	
+<Layout
+  title="Full Dépannage - Dépannage & Remorquage dans toute la France"
+  description="Besoin d'un remorquage ou dépannage auto ? Intervention rapide 7j/7 24h/24 ? Agréé assurances. Appelez-nous !"
+>
+  <LocalBusinessSchema />
+  <Header />
+  <Presentation />
+  <Services />
+  <PourquoiNous />
+  <ZoneIntervention />
+  <Contact />
 </Layout>

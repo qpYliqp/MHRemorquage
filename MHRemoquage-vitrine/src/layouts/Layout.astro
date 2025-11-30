@@ -1,15 +1,40 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/logo-provisoire.png" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Full Dépannage</title>
-	</head>
-	<body>
+---
+import "../styles/global.css";
 
-		<slot />
-		
-	</body>
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  canonicalURL?: string;
+  type?: "website";
+}
+
+const {
+  title,
+  description = "Full Dépannage - Dépannage et remorquage automobile 7j/7 et 24h/24 partout en France. Intervention rapide, tarifs agréés assurances.",
+  image = "/logo-provisoire.png",
+  canonicalURL = Astro.url.href,
+  type = "website",
+} = Astro.props;
+
+const siteURL = Astro.site ? Astro.site.href : "https://www.full-depannage.fr";
+const socialImageURL = new URL(image, siteURL).href;
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/logo-provisoire.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
