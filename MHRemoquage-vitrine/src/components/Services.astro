@@ -1,10 +1,9 @@
 ---
-import ServiceCard from './ServiceCard.astro';
+import ServiceCard from "./shared/ServiceCard.astro";
 ---
 
 <section class="relative w-full overflow-hidde">
   <div class="container mx-auto px-4 py-20 md:py-32">
-    
     <div class="mb-16 md:mb-20">
       <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
         Nos <span class="text-red-primary">Services</span>
@@ -13,9 +12,10 @@ import ServiceCard from './ServiceCard.astro';
         Des solutions professionnelles adaptées à tous vos besoins automobiles
       </p>
     </div>
-    
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-7xl mx-auto">
 
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-7xl mx-auto"
+    >
       <ServiceCard
         title='<span class="text-slate-800">Dépannage &</span><br /><span class="text-red-primary">Remorquage</span>'
         description="Service d'urgence disponible à tout moment pour votre tranquillité d'esprit."
@@ -28,7 +28,7 @@ import ServiceCard from './ServiceCard.astro';
           "Enlèvement d'épave.",
         ]}
       />
-      
+
       <ServiceCard
         title='<span class="text-red-primary">Serrurerie</span><br /><span class="text-slate-800">Automobile</span>'
         description="Expert en solutions d'accès véhicule avec intervention rapide et professionnelle."
@@ -36,7 +36,7 @@ import ServiceCard from './ServiceCard.astro';
         image="/serrurerie-illustration.png"
         features={[
           "Ouverture de portes sans dégâts (clés perdues, verrouillées à l'intérieur, clé cassée).",
-          "Codage de clés."
+          "Codage de clés.",
         ]}
       />
 
@@ -47,7 +47,7 @@ import ServiceCard from './ServiceCard.astro';
         image="/convoyage-illustration.png"
         features={[
           "Convoyage professionnel pour garages, concessions et particuliers.",
-          "Service national et international, assuré et sécurisé."
+          "Service national et international, assuré et sécurisé.",
         ]}
       />
 
@@ -62,9 +62,6 @@ import ServiceCard from './ServiceCard.astro';
           "Préparation avant contrôle technique ou réparation.",
         ]}
       />
-      
     </div>
-
-   
   </div>
 </section>
