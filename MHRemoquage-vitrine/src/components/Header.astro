@@ -1,12 +1,16 @@
-<header class="w-full fixed top-0 z-50 bg-primary shadow-[0_1px_3px_rgba(0,0,0,0.08),0_3px_6px_rgba(0,0,0,0.06)]">
-
+<header
+  class="w-full fixed top-0 z-50 bg-primary shadow-[0_1px_3px_rgba(0,0,0,0.08),0_3px_6px_rgba(0,0,0,0.06)]"
+>
   <div class="w-full bg-primary">
-    <div class="max-w-6xl mx-auto h-16 md:h-20 flex items-center justify-between px-4 gap-4">
-      
+    <div
+      class="max-w-6xl mx-auto h-10 md:h-13 flex items-center justify-between px-4 gap-4"
+    >
       <div class="flex items-center gap-2 md:gap-3">
-        <img src="/logo-provisoire.png" 
-             alt="Logo Full Dépannage" 
-             class="h-10 md:h-16 object-contain drop-shadow-lg" />
+        <img
+          src="/logo1.png"
+          alt="Logo Full Dépannage"
+          class="h-10 md:h-13 object-contain drop-shadow-lg"
+        />
 
         <div class="flex flex-col leading-tight">
           <span class="text-black text-[10px] md:text-md font-semibold">
@@ -19,44 +23,49 @@
       </div>
 
       <div class="flex flex-col items-end gap-1 md:gap-2">
-        <div class="inline-flex items-center gap-1.5 md:gap-2 rounded-full border border-red-primary/80 bg-red-primary/10 px-2.5 py-0.5 md:px-3 md:py-1 text-[8px] md:text-xs backdrop-blur">
-          <span class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-red-primary animate-pulse"></span>
+        <div
+          class="inline-flex items-center gap-1.5 md:gap-2 rounded-full border border-red-primary/80 bg-red-primary/10 px-2.5 py-0.5 md:px-3 md:py-1 text-[8px] md:text-xs backdrop-blur"
+        >
+          <span
+            class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-red-primary animate-pulse"
+          ></span>
           <span class="text-red-primary text-[10px] md:text-md font-medium">
             Dépannage 24/7 partout en France
           </span>
         </div>
       </div>
-
     </div>
   </div>
 </header>
 
 <script>
-  document.addEventListener('scroll', () => {
-    const header = document.querySelector('header');
+  document.addEventListener("scroll", () => {
+    const header = document.querySelector("header");
     if (window.scrollY > 20) {
-      header.classList.add('shrink');
+      header.classList.add("shrink");
     } else {
-      header.classList.remove('shrink');
+      header.classList.remove("shrink");
     }
   });
 </script>
 
 <style>
-header {
-  transition: background-color 0.4s ease, padding 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
-}
+  header {
+    transition:
+      background-color 0.4s ease,
+      padding 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
 
-header .max-w-6xl,
-header img {
-  transition: height 0.45s cubic-bezier(0.22, 1, 0.36, 1);
-}
+  header .max-w-6xl,
+  header img {
+    transition: height 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+  }
 
-header.shrink .max-w-6xl {
-  height: 50px !important;
-}
+  header.shrink .max-w-6xl {
+    height: 50px !important;
+  }
 
-header.shrink img {
-  height: 32px !important;
-}
+  header.shrink img {
+    height: 32px !important;
+  }
 </style>
