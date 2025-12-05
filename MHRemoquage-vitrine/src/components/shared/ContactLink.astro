@@ -9,30 +9,31 @@ interface Props {
 const { label, svgCode, link, userName } = Astro.props;
 ---
 
-<div class="flex items-center gap-3 group cursor-pointer">
-  <a
+<a
     href={link}
     target="_blank"
-    class="w-10 h-10 rounded-full bg-white/5 group-hover:bg-white/10 flex items-center justify-center transition-all duration-150"
+    rel="noopener noreferrer"
+    class="w-fit flex items-center gap-3 group cursor-pointer"
     aria-label={label}
+>
+  <div
+      class="w-10 h-10 rounded-full bg-white/5 group-hover:bg-white/10 flex items-center justify-center transition-all duration-150"
   >
     <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class="w-5 h-5 text-slate-400 group-hover:text-white"
-      fill="currentColor"
-      viewBox="0 0 24 24"
-      stroke="none"
-      stroke-width="2"
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-5 h-5 text-slate-400 group-hover:text-white"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        stroke="none"
+        stroke-width="2"
     >
       <path stroke-linecap="round" stroke-linejoin="round" d={svgCode}></path>
     </svg>
-  </a>
+  </div>
 
-  <a
-    href={link}
-    target="_blank"
-    class="text-slate-400 text-sm group-hover:text-white transition-all duration-150"
+  <span
+      class="text-slate-400 text-sm group-hover:text-white transition-all duration-150"
   >
     @{userName}
-  </a>
-</div>
+  </span>
+</a>
