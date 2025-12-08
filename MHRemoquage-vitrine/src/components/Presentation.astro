@@ -86,11 +86,13 @@ import CertificationBadge from "./shared/CertificationBadge.astro";
             Demander un dépannage
           </a>
         </div>
-        <div class="flex pt-5 items-center gap-8 text-white">
-          <CertificationBadge title="Professionnel agréé" />
-          <CertificationBadge title="Intervention rapide" />
-          <CertificationBadge title="Tarifs transparents" />
-        </div>
+<div class="flex justify-center pt-5 text-white md:justify-start">
+  <div class="flex flex-col gap-4 md:flex-row md:gap-8">
+    <CertificationBadge title="Professionnel agréé" />
+    <CertificationBadge title="Intervention rapide" />
+    <CertificationBadge title="Tarifs transparents" />
+  </div>
+</div>
       </div>
     </div>
   </div>
